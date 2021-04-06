@@ -1,1 +1,1 @@
-web: voila —-port=$PORT —-no-browser techni.ipynb
+web: voila --port=$PORT --no-browser techni.ipynb
