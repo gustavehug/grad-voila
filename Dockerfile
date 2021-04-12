@@ -13,10 +13,10 @@ WORKDIR /app
 RUN pip install -r requirements.txt 
 
 # STEP 5: Declare environment variables
-ENV PORT=8866
+ENV PORT "8080"
 
 # STEP 6: Expose the port that Voila is running on
 EXPOSE ${PORT}
 
 # STEP 7: Run Voila!
-CMD ["voila", "techni.ipynb", "--no-browser", "--port=8866"]
+CMD ["voila", "techni.ipynb", "--no-browser", "--port=8080"]
