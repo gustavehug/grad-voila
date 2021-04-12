@@ -9,14 +9,14 @@ ADD . /app
 # STEP 3: Set working directory to /app so we can execute commands in it
 WORKDIR /app
 
-# STEP 4: Install necessary requirements (Flask, etc)
+# STEP 4: Install necessary requirements (Voila, Jax etc)
 RUN pip install -r requirements.txt 
 
 # STEP 5: Declare environment variables
 ENV PORT=8866
 
-# STEP 6: Expose the port that Flask is running on
+# STEP 6: Expose the port that Voila is running on
 EXPOSE ${PORT}
 
-# STEP 7: Run Flask!
+# STEP 7: Run Voila!
 CMD ["voila", "techni.ipynb", "--no-browser", "--port=8866"]
